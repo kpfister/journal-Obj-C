@@ -14,6 +14,8 @@
 		FBB4B8CD20E3F6C300997F38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB4B8CC20E3F6C300997F38 /* main.m */; };
 		FBB4B8D720E3F6C300997F38 /* Journal_Obj_CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB4B8D620E3F6C300997F38 /* Journal_Obj_CTests.m */; };
 		FBB4B8E220E3F6C300997F38 /* Journal_Obj_CUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB4B8E120E3F6C300997F38 /* Journal_Obj_CUITests.m */; };
+		FBB4B8F220E3FDF000997F38 /* EntiresTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB4B8F120E3FDF000997F38 /* EntiresTableViewController.m */; };
+		FBB4B8F620E3FE2100997F38 /* EntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB4B8F520E3FE2100997F38 /* EntryDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		FBB4B8DD20E3F6C300997F38 /* Journal-Obj-CUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Journal-Obj-CUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB4B8E120E3F6C300997F38 /* Journal_Obj_CUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Journal_Obj_CUITests.m; sourceTree = "<group>"; };
 		FBB4B8E320E3F6C300997F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB4B8F020E3FDF000997F38 /* EntiresTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntiresTableViewController.h; sourceTree = "<group>"; };
+		FBB4B8F120E3FDF000997F38 /* EntiresTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntiresTableViewController.m; sourceTree = "<group>"; };
+		FBB4B8F420E3FE2100997F38 /* EntryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryDetailViewController.h; sourceTree = "<group>"; };
+		FBB4B8F520E3FE2100997F38 /* EntryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,8 @@
 				FBB4B8BD20E3F6C200997F38 /* AppDelegate.h */,
 				FBB4B8BE20E3F6C200997F38 /* AppDelegate.m */,
 				FBB4B8C320E3F6C200997F38 /* Main.storyboard */,
-				FBB4B8C620E3F6C300997F38 /* Assets.xcassets */,
-				FBB4B8C820E3F6C300997F38 /* LaunchScreen.storyboard */,
-				FBB4B8CB20E3F6C300997F38 /* Info.plist */,
-				FBB4B8CC20E3F6C300997F38 /* main.m */,
+				FBB4B8F320E3FDF700997F38 /* View Controllers */,
+				FBB4B8EF20E3FDCC00997F38 /* Misc */,
 			);
 			path = "Journal-Obj-C";
 			sourceTree = "<group>";
@@ -125,6 +129,44 @@
 				FBB4B8E320E3F6C300997F38 /* Info.plist */,
 			);
 			path = "Journal-Obj-CUITests";
+			sourceTree = "<group>";
+		};
+		FBB4B8EF20E3FDCC00997F38 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				FBB4B8C620E3F6C300997F38 /* Assets.xcassets */,
+				FBB4B8C820E3F6C300997F38 /* LaunchScreen.storyboard */,
+				FBB4B8CB20E3F6C300997F38 /* Info.plist */,
+				FBB4B8CC20E3F6C300997F38 /* main.m */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		FBB4B8F320E3FDF700997F38 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FBB4B8F720E3FE2800997F38 /* TBVC */,
+				FBB4B8F820E3FE3000997F38 /* VC */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FBB4B8F720E3FE2800997F38 /* TBVC */ = {
+			isa = PBXGroup;
+			children = (
+				FBB4B8F020E3FDF000997F38 /* EntiresTableViewController.h */,
+				FBB4B8F120E3FDF000997F38 /* EntiresTableViewController.m */,
+			);
+			path = TBVC;
+			sourceTree = "<group>";
+		};
+		FBB4B8F820E3FE3000997F38 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				FBB4B8F420E3FE2100997F38 /* EntryDetailViewController.h */,
+				FBB4B8F520E3FE2100997F38 /* EntryDetailViewController.m */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +301,8 @@
 			files = (
 				FBB4B8CD20E3F6C300997F38 /* main.m in Sources */,
 				FBB4B8BF20E3F6C200997F38 /* AppDelegate.m in Sources */,
+				FBB4B8F620E3FE2100997F38 /* EntryDetailViewController.m in Sources */,
+				FBB4B8F220E3FDF000997F38 /* EntiresTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
